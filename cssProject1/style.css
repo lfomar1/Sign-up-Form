@@ -1,0 +1,125 @@
+@font-face {
+  font-family: logo-font;
+  src: url(./fonts/Norse-Bold.otf);
+}
+@font-face {
+  font-family: body-font;
+  src: url(./fonts/Kiona-Regular.ttf);
+}
+@font-face {
+  font-family: body-bold;
+  src: url(./fonts/FontsFree-Net-Kiona-Bold.ttf);
+}
+:root {
+  --background-gray: rgb(240, 240, 240);
+  --bakckground-logo: rgba(0, 0, 0, 0.527);
+}
+main {
+  display: flex;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.2rem;
+  font-family: body-font;
+}
+.header {
+  font-family: body-bold;
+}
+
+.side-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./img/johny-goerend-U_diPCXCBxU-unsplash.jpg);
+  width: 60vw;
+  min-width: 345px;
+  height: 100vh;
+  position: relative;
+  flex-grow: 1;
+  background-size: cover;
+}
+.side-hero div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--bakckground-logo);
+  padding: 15px 0;
+}
+.side-hero img {
+  width: 5rem;
+}
+h1 {
+  color: white;
+  font-family: logo-font;
+  font-size: 3rem;
+  padding: 0px 20px;
+}
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--background-gray);
+}
+.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  background-color: white;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+}
+label {
+  position: relative;
+  width: 15rem;
+  margin-bottom: 5px;
+}
+input {
+  font-family: body-bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(224, 224, 224);
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+form {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1rem;
+  margin-top: 20px;
+  gap: 1rem;
+  width: 60vw;
+}
+.header,
+.submit {
+  padding: 2vw 2vw;
+}
+button {
+  font-family: body-bold;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  border: 1px solid #008248;
+  padding: 0.8rem 1.8rem;
+  background-color: #008248;
+  cursor: pointer;
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.54);
+  margin-bottom: 10px;
+}
+a {
+  color: #008248;
+  text-decoration: none;
+}
+input:invalid:focus {
+  outline: 2px solid red;
+}
+.error {
+  font-family: body-bold;
+  font-size: 0.7rem;
+  color: rgb(255, 69, 100);
+  position: absolute;
+}
